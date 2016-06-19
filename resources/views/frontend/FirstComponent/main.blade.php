@@ -44,7 +44,7 @@
         </div>
     </div>
 </nav>
-<div class="col-md-6 centered">
+<div class="centered">
     <h2>Select files for upload</h2>
     <div class="row bottom-space">
         <form>
@@ -78,4 +78,7 @@
             </li>
         </ul>
     </div>
+</div>
+<div  class="centered">
+    <table-demo ></table-demo>
 </div>
