@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { FileUploadService } from '../../Services/FileUploadService/FileUploadService';
 import { ProgressBar } from '../UI/ProgressBar/ProgressBar';
 import { TableDemoComponent } from '../UI/TableMain/TableMain';
+import { DataTableDirectives } from '../UI/DataTable/DataTable';
 
 @Component({
-    'directives': [ProgressBar, TableDemoComponent],
+    'directives': [ProgressBar, TableDemoComponent, DataTableDirectives],
     'providers': [FileUploadService],
     'selector': 'state-template',
     'templateUrl': '/templates/FirstComponent.main'
