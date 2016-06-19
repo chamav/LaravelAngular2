@@ -9,16 +9,7 @@ import {NG_TABLE_DIRECTIVES} from 'ng2-table';
 
 @Component({
     selector: 'table-demo',
-    template: `<input *ngIf="config.filtering" placeholder="Filter"
-       [ngTableFiltering]="config.filtering"
-       (tableChanged)="onChangeTable(config)"/>
-
-<ng-table [config]="config.sorting"
-           (tableChanged)="onChangeTable(config)"
-           [rows]="rows" [columns]="columns">
-</ng-table>
-
-<pre *ngIf="config.paging" class="card card-block card-header">Page: {{page}} / {{numPages}}</pre>`,
+    'templateUrl': '/templates/UIComponents.TableMain.main',
     directives: [NG_TABLE_DIRECTIVES, PAGINATION_DIRECTIVES, NgClass, NgIf, CORE_DIRECTIVES, FORM_DIRECTIVES]
 })
 export class TableDemoComponent implements OnInit {
