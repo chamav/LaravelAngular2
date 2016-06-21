@@ -79,9 +79,5 @@
         </ul>
     </div>
 </div>
-<div  class="centered">
-    <table-demo ></table-demo>
-</div>
-<div  class="centered">
-    <data-table ></data-table>
-</div>
+
+<data-table ></data-table>

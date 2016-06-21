@@ -1,14 +1,5 @@
 <div class="container">
-    <div class="col-xs-12 col-md-offset-2">
-
-        <div class="page-header">
-            <h1>
-                <span>Angular2 DataTable component</span><br/>
-                <small>by mariuszfoltak</small>
-            </h1>
-        </div>
-
-        <h2>Simple data table</h2>
+    <div class="col-xs-12">
 
         <div class="panel panel-default">
             <div class="panel-heading">User information</div>
