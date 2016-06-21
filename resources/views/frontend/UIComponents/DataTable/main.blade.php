@@ -23,7 +23,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr *ngFor="#item of mf.data">
+                <tr *ngFor="let item of mf.data">
                     <td>
                         <button class="btn btn-danger" title="remove" (click)="removeItem(item)">
                             <span class="glyphicon glyphicon-remove"></span>
