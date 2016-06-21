@@ -1,12 +1,20 @@
 import {Component} from '@angular/core';
+import {DatePipe} from "@angular/common";
+import {HTTP_PROVIDERS, Http} from "@angular/http";
 import {DataTableDirectives} from 'angular2-datatable/datatable';
+import * as _ from 'lodash';
+
 
 @Component({
     selector: 'data-table',
-    'templateUrl': '/templates/UIComponents.DataTable.main',
+    templateUrl: '/templates/UIComponents.DataTable.main',
+    providers: [HTTP_PROVIDERS],
+    directives: [DataTableDirectives],
+    pipes: [DatePipe]
 })
-export class DataTableDirectives {
-    private data: any[] = [
+export class DataTable {
+
+    private data:Array<any> = [
         {
             "name": "Wing",
             "email": "tellus.eu.augue@arcu.com",
@@ -707,5 +715,17 @@ export class DataTableDirectives {
             "city": "Kobbegem",
             "age": 22
         }
-    ]
+    ];
+
+
+
+    private sortByWordLength = (a:any) => {
+        return a.name.length;
+    }
+
+    public removeItem(item: any) {
+        this.data = _.filter(this.data, (elem)=>elem!=item);
+        console.log("Remove: ", item.email);
+    }
+
 }
