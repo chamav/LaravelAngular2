@@ -31,7 +31,7 @@
                     </td>
                     <td>@{{item.name}}</td>
                     <td>@{{item.email}}</td>
-                    <td class="text-right">@{{item.age}}</td>
+                    <td{{-- class="text-right"--}}>@{{item.age}}</td>
                     <td>@{{item.city | uppercase}}</td>
                 </tr>
                 </tbody>
